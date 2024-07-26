@@ -17,6 +17,15 @@
   color: white;
   background-color: #000000;
 }
+main {
+  max-width: 1200px;
+  margin: 100px auto;
+  /* border: 5px solid white; */
+}
+section {
+  margin-top: 100px;
+}
+
 /* All-Primary-css-property */
 :root {
   /* ***color*** */
@@ -39,17 +48,19 @@
   gap: 30px;
 }
 #btn {
+  width: 224px;
   color: var(--white-1);
   font-size: var(--font18);
-  padding: 16px 40px;
+  padding: 15px;
   background-color: var(--hight-light);
   border: none;
   border-radius: 50px;
 }
 #btn-dwn {
+  width: 224px;
   color: var(--white-1);
   font-size: var(--font18);
-  padding: 16px 40px;
+  padding: 15px;
   background-color: #000000;
   border: 2px solid var(--white-1);
   border-radius: 50px;
@@ -62,9 +73,9 @@
   height: 715px;
   background-image: linear-gradient(
     to top,
-    rgb(17, 17, 17),
-    rgba(119, 119, 119, 0.3),
-    rgb(17, 17, 17)
+    rgb(7, 7, 7),
+    rgba(119, 119, 119, 0.2),
+    rgb(7, 7, 7)
   );
   /* border: 3px solid white; */
 }
@@ -102,13 +113,14 @@
 }
 #align-justify i {
   font-size: 30px;
+  border: none;
 }
-
 #home-dign {
   padding: 5px 3px;
   background-color: var(--hight-light);
   border-radius: 20px;
 }
+
 /* Banner-Part  */
 .header-banner-container {
   margin-top: 30px;
@@ -195,19 +207,443 @@
 .inner-two p {
   font-size: var(--font14);
 }
-/* Header-Part-Start  */
+/* Header-Part-End  */
+
+/* section-one-your-habits-start  */
+.section-one-your-habits {
+  width: 100%;
+}
+
+.your-habits-tittle {
+  width: 65%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.habits-container {
+  display: flex;
+  justify-content: space-around;
+}
+.Habits {
+  width: 230px;
+  height: 280px;
+  text-align: center;
+}
+.Habits img {
+  border-radius: 50%;
+}
+.section-one-your-habits h2 {
+  color: var(--white-1);
+  font-size: var(--font48);
+  font-weight: var(--header-btn);
+  margin-bottom: 15px;
+}
+.section-one-your-habits h3 {
+  color: var(--white-1);
+  font-size: var(--font18);
+  font-weight: var(--header-btn);
+  margin-top: 25px;
+  margin-bottom: 12px;
+}
+.section-one-your-habits p {
+  color: var(--gray-2);
+  font-size: var(--font14);
+}
+
+/* section-two-run-extra start */
+
+.section-two-run-extra {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(30, 30, 30);
+  border-radius: 18px;
+}
+.run-extra-contain-tittle {
+  width: 443px;
+  height: 290px;
+}
+.run-extra-contain-tittle h2 {
+  color: var(--white-1);
+  font-size: var(--font48);
+  font-weight: var(--header-btn);
+}
+.run-extra-contain-tittle p {
+  margin: 34px 0;
+  color: var(--gray-2);
+  font-size: var(--font14);
+}
+.run-extra-img-container {
+  width: 366px;
+  height: 312px;
+}
+.run-extra-img-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+}
+
+/* section-three-start */
+.section-three {
+  margin-bottom: 100px;
+}
+.section-three-items-container h2 {
+  text-align: center;
+  color: var(--white-1);
+  font-size: var(--font48);
+  font-weight: var(--header-btn);
+  margin-bottom: 30px;
+}
+
+.item-robi {
+  width: 90%;
+  height: 200px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding: 30px;
+  background-color: black;
+  box-shadow: 1px 5px 10px 0px;
+}
+.item-robi p {
+  margin-top: 20px;
+  color: var(--gray-2);
+  font-size: var(--font14);
+}
+
+/* offsional-section start */
+.offsional-section {
+  margin: 100px 0;
+}
+.offsional-section-tittle {
+  margin-bottom: 50px;
+}
+.offsional-section-tittle h2 {
+  color: var(--white-1);
+  font-size: var(--font48);
+  font-weight: var(--header-btn);
+  margin-bottom: 15px;
+}
+.offsional-section-tittle p {
+  color: var(--gray-2);
+  font-size: var(--font14);
+  width: 550px;
+}
+.box-1 {
+  display: grid;
+  grid-template-columns: 280px auto 340px;
+}
+.box-2 {
+  display: grid;
+  grid-template-columns: auto 300px 390px;
+}
+.image {
+  height: 250px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.image p {
+  width: 200px;
+  color: var(--white-1);
+  font-size: var(--font14);
+}
+#item-1 {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 255, 255, 0.423),
+      rgba(0, 255, 255, 0.443)
+    ),
+    url(../images/exercise1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#item-2 {
+  justify-content: start;
+
+  background-image: linear-gradient(
+      to top,
+      rgba(255, 0, 0, 0.3),
+      rgba(255, 0, 0, 0.3)
+    ),
+    url(../images/exercise2.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#item-3 {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.423),
+      rgba(0, 0, 0, 0.443)
+    ),
+    url(../images/exercise3.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#item-4 {
+  justify-content: start;
+  align-items: end;
+  background-image: linear-gradient(
+      to top,
+      rgba(10, 10, 10, 0.551),
+      rgba(10, 10, 10, 0.551)
+    ),
+    url(../images/exercise4.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#item-5 {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 250, 0, 0.251),
+      rgba(0, 250, 0, 0.251)
+    ),
+    url(../images/exercise5.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#item-6 {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 200, 0.323),
+      rgba(0, 0, 200, 0.343)
+    ),
+    url(../images/exercise6.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* section-fore-BMI-start  */
+
+/* 1-section-fore-BMI  */
+.section-fore-BMI-tittle {
+  width: 65%;
+  margin: 0 auto;
+  /* border: 2px solid white; */
+}
+.section-fore-BMI-tittle h2 {
+  color: var(--white-1);
+  font-size: var(--font48);
+  margin-bottom: 25px;
+}
+.section-fore-BMI-tittle p {
+  color: var(--gray-2);
+  font-size: var(--font18);
+}
+
+/* 2-section-fore-BMI  */
+
+.section-fore-BMI-container {
+  background-color: rgba(128, 128, 128, 0.299);
+}
+.BMI-TABLE-FORM {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.BMI-table h3 {
+  color: var(--white-1);
+  font-size: 32px;
+  font-weight: var(--header-btn);
+  margin-bottom: 30px;
+}
+
+.BMI-form {
+  width: 600px;
+}
+
+table {
+  border-collapse: collapse;
+}
+th {
+  color: var(--white-1);
+  font-size: var(--font18);
+  font-weight: var(--header-btn);
+  padding: 15px 30px;
+  border: 2px solid white;
+}
+td {
+  color: var(--gray-2);
+  font-size: var(--font18);
+  padding: 15px 30px;
+  border: 2px solid white;
+}
+
+.BMI-form h3 {
+  color: var(--white-1);
+  font-size: 32px;
+  font-weight: var(--header-btn);
+  margin-bottom: 15px;
+}
+.BMI-form p {
+  color: var(--gray-2);
+  font-size: var(--font14);
+  margin-bottom: 20px;
+}
+
+input,
+select {
+  color: var(--white-1);
+  padding: 15px 9px;
+  margin-bottom: 15px;
+  font-size: var(--font18);
+  width: calc((100% - 5px) / 2);
+  border-radius: 10px;
+  background-color: rgba(100, 100, 100, 0.299);
+  border: none;
+}
+.select-foctor {
+  width: 100%;
+}
+.BMI-form #btn {
+  margin-top: 30px;
+}
+
+/* section-five-our-team-start  */
+
+.section-five-tittle-container {
+  width: 65%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  text-align: center;
+  /* border: 3px solid green; */
+}
+.section-five-tittle-container h2 {
+  color: var(--white-1);
+  font-size: var(--font48);
+  margin-bottom: 15px;
+}
+.section-five-tittle-container p {
+  color: var(--gray-2);
+  font-size: var(--font14);
+}
+.section-five-img-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 25px;
+  background-color: rgba(80, 80, 80, 0.406);
+  border-radius: 18px;
+  /* border: 3px solid white; */
+}
+.five-img-contain {
+  margin: 0 auto;
+  width: 350px;
+  height: 310px;
+  line-height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 10px;
+  /* border: 2px dashed aqua; */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 18px;
+}
+.five-img-contain h3 {
+  color: var(--white-1);
+  font-size: var(--font18);
+  font-weight: var(--header-btn);
+}
+.five-img-contain p {
+  color: var(--gray-2);
+  font-size: var(--font14);
+}
+.img-1 {
+  background-image: url(../images/trainer1.png);
+}
+.img-2 {
+  background-image: url(../images/trainer2.png);
+}
+.img-3 {
+  background-image: url(../images/trainer3.png);
+}
+.img-4 {
+  background-image: url(../images/trainer4.png);
+}
+.img-5 {
+  background-image: url(../images/trainer5.png);
+}
+.img-6 {
+  background-image: url(../images/trainer6.png);
+}
+
+/* footer-section-start  */
+.footer {
+  width: 100%;
+  height: 500px;
+  margin-top: 100px;
+  background-color: rgba(90, 90, 90, 0.413);
+  border: 0.1px solid rgba(20, 20, 20, 0.413);
+}
+.fitness-tittle-footer-container {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+.fitness-name {
+  width: 500px;
+}
+.fitness-name h1 {
+  color: var(--hight-light);
+  font-size: var(--font78);
+  font-weight: var(--header-btn);
+}
+.fitness-name p {
+  color: var(--gray-2);
+  font: var(--font14);
+  margin-top: 50px;
+}
+.get-started {
+  width: 280px;
+}
+.get-started h3 {
+  color: var(--white-1);
+  font-size: 36px;
+  font-weight: var(--header-btn);
+  margin-bottom: 30px;
+}
+.get-started li {
+  color: var(--gray-2);
+  font-size: 22px;
+  line-height: 40px;
+  list-style: none;
+}
+.copy-right-section {
+  width: 1200px;
+  color: var(--gray-2);
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 35px 0;
+  font-size: 30px;
+  text-align: center;
+  line-height: 30px;
+  border-top: 0.1px solid var(--gray-2);
+}
 
 /* Media Quary-for Mobile phone  */
 @media screen and (max-width: 576px) {
   .all-body {
     justify-items: center;
   }
+
   .header {
     width: 100%;
     height: 1200px;
     margin: 50px auto;
     padding: 0 30px;
-    border: 2px solid #e6533c;
   }
   .manu-ber {
     display: none;
@@ -215,19 +651,15 @@
   #align-justify {
     display: flex;
   }
-
   .header-banner-container {
     flex-direction: column;
   }
   .header-banner-container h1 {
     font-size: var(--font48);
   }
-
   .header-banner-tittle {
     width: 95%;
-    border: 2px solid white;
   }
-
   .header-banner-bg-contain {
     width: 95%;
     height: 750px;
@@ -236,15 +668,187 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    border: 2px solid white;
   }
   .inner-one {
     margin-top: 40px;
     margin-left: 260px;
   }
-
   .inner-two {
     margin-top: 200px;
     margin-left: 20px;
+  }
+
+  /* .section-one-your-habits  */
+  main {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .section-one-your-habits {
+    width: 100%;
+    margin-top: 530px;
+    justify-items: center;
+  }
+
+  .your-habits-tittle {
+    width: 99%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: var(--font18);
+  }
+
+  .habits-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .Habits {
+    margin-top: 40px;
+  }
+
+  /* section-two-run-extra start */
+  .section-two-run-extra {
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(34, 34, 34);
+    border-radius: 18px;
+  }
+  .run-extra-contain-tittle {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 30px;
+  }
+
+  .run-extra-img-container {
+    width: 100%;
+    height: 100%;
+  }
+  .run-extra-contain-tittle #btn {
+    width: 100%;
+  }
+
+  /* section-three-items-container  */
+  .item-robi {
+    overflow-y: auto;
+  }
+
+  /* offsional-section-START  */
+  .offsional-section {
+    width: 100%;
+  }
+  .offsional-section-tittle h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .offsional-section-tittle p {
+    width: 100%;
+  }
+  .box-1 {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .box-2 {
+    width: 100%;
+    grid-template-columns: 190px 250px;
+  }
+  .image {
+    height: 170px;
+    padding: 10px;
+  }
+
+  #item-3 {
+    display: none;
+  }
+  #item-4 p {
+    display: none;
+  }
+  #item-6 {
+    display: none;
+  }
+
+  /* section-fore-BMI-start  */
+  /* 1-section-fore-BMI  */
+  .section-fore-BMI-tittle {
+    width: 100%;
+  }
+  /* 2-section-fore-BMI  */
+  .BMI-TABLE-FORM {
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  .BMI-table {
+    width: 100%;
+  }
+  .BMI-form {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .BMI-TABLE-FORM h3 {
+    color: var(--white-1);
+    font-size: 28px;
+    font-weight: var(--header-btn);
+    margin-bottom: 15px;
+  }
+  .BMI-form p {
+    color: var(--gray-2);
+    font-size: var(--font14);
+    margin-bottom: 20px;
+  }
+  input,
+  select {
+    color: var(--white-1);
+    padding: 15px 9px;
+    margin-bottom: 15px;
+    font-size: var(--font18);
+    width: calc((100% - 5px) / 2);
+    border-radius: 10px;
+    background-color: rgba(100, 100, 100, 0.299);
+    border: none;
+  }
+  .select-foctor {
+    width: 100%;
+  }
+  .BMI-form #btn {
+    margin-top: 30px;
+  }
+
+  /* section-five-our-team-start  */
+  .section-five-tittle-container {
+    width: 100%;
+  }
+  .section-five-img-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .five-img-contain {
+    width: 100%;
+    height: 310px;
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  /* footer-section  */
+  .footer {
+    width: 100%;
+    height: 100%;
+  }
+  .fitness-tittle-footer-container {
+    width: 90%;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .fitness-name {
+    width: 100%;
+  }
+  .get-started {
+    width: 100%;
+  }
+  .copy-right-section {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 20px;
+    margin-top: 50px;
+    font-size: 21px;
   }
 }
