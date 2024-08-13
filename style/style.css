@@ -1,11 +1,21 @@
 /* Google-Font  */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Grey+Qo&display=swap');
+
 .inter-font {
   font-family: 'Inter', sans-serif;
   font-optical-sizing: auto;
   font-weight: <400>;
   font-style: normal;
   font-variation-settings: 'slnt' 0;
+}
+
+.shape-style {
+  font-family: 'Grey Qo', cursive;
+  font-weight: 300;
+  font-size: 100px;
+  font-style: normal;
 }
 
 * {
@@ -24,6 +34,8 @@ main {
 }
 section {
   margin-top: 100px;
+}
+.shape-style {
 }
 
 /* All-Primary-css-property */
@@ -285,35 +297,6 @@ section {
   border-radius: 18px;
 }
 
-/* section-three-start */
-.section-three {
-  display: none;
-  margin-bottom: 100px;
-}
-.section-three-items-container h2 {
-  text-align: center;
-  color: var(--white-1);
-  font-size: var(--font48);
-  font-weight: var(--header-btn);
-  margin-bottom: 30px;
-}
-
-.item-robi {
-  width: 90%;
-  height: 200px;
-  margin: 0 auto;
-  margin-bottom: 40px;
-  padding: 10px 30px;
-  background-color: black;
-  box-shadow: 1px 5px 10px 0px;
-}
-.item-robi p {
-  margin-top: 20px;
-  line-height: 20px;
-  color: var(--gray-2);
-  font-size: var(--font14);
-}
-
 /* timetable start  */
 .timetable {
   height: 600px;
@@ -337,8 +320,6 @@ section {
   width: 500px;
   margin: 0 auto;
   text-align: center;
-
-  /* border: 2px solid aqua; */
 }
 .timetable-tittle h1 {
   color: black;
@@ -364,36 +345,35 @@ section {
   /* border: 2px solid blueviolet; */
 }
 .day {
-  width: 170px;
-  padding: 7px;
-  margin: 0 auto;
+  width: 190px;
   padding: 10px;
-  border: 1px solid white;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid gray;
 }
 
 .day h3 {
   color: black;
   text-align: center;
+  padding: 7px;
   background-color: #e27c11;
 }
 .sp-day h3 {
   background-color: #ffd966;
 }
 .day h6 {
-  /* text-align: center; */
   color: #f0bd88;
-  font-size: 10px;
+  font-size: 11px;
   margin: 25px 0;
 }
 .sp-day h6 {
   color: #ffd966;
 }
 .day li {
-  color: gray;
+  color: white;
   list-style: none;
   margin-bottom: 10px;
   font-size: 15px;
-  /* border: 1px solid black; */
 }
 
 /* offsional-section start */
@@ -586,7 +566,11 @@ select {
   border: none;
 }
 .select-foctor {
+  color: gray;
   width: 100%;
+}
+.sex {
+  color: gray;
 }
 .BMI-form #btn {
   margin-top: 30px;
@@ -722,16 +706,16 @@ select {
   body {
     margin: 0 auto;
   }
-
-  /* .all-body {
-    justify-items: center;
+  /* .shape-style {
+    font-size: 80px;
   } */
-
   .header {
     width: 100%;
-    height: 1200px;
+    height: auto;
     margin: 50px auto;
-    padding: 0 30px;
+  }
+  .nav-ber {
+    padding: 0 20px;
   }
   .manu-ber {
     display: none;
@@ -750,20 +734,21 @@ select {
   }
   .header-banner-bg-contain {
     width: 95%;
-    height: 750px;
+    height: 650px;
     margin-top: 50px;
     margin-right: 0;
-    background-position: center;
+    position: relative;
+    background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
   }
   .inner-one {
-    margin-top: 40px;
-    margin-left: 260px;
+    margin-top: 70px;
+    margin-left: 270px;
   }
   .inner-two {
-    margin-top: 200px;
-    margin-left: 20px;
+    margin-top: 250px;
+    margin-left: 45px;
   }
 
   /* .section-one-your-habits  */
@@ -778,13 +763,15 @@ select {
   }
 
   .your-habits-tittle {
-    width: 99%;
+    width: 100%;
     margin: 0 auto;
-    text-align: center;
+    /* text-align: center; */
     margin-bottom: 50px;
-    font-size: var(--font18);
+    font-size: 15px;
   }
-
+  .your-habits-tittle h2 {
+    font-size: 35px;
+  }
   .habits-container {
     display: flex;
     flex-direction: column;
@@ -815,17 +802,43 @@ select {
   .run-extra-contain-tittle #btn {
     width: 100%;
   }
-  /* section-three-items-container  */
-  .item-robi {
-    overflow-y: auto;
+
+  /* timetable start  */
+  .timetable {
+    height: auto;
+    width: 100%;
+    padding: 10px 0;
+  }
+  .timetable-tittle {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .timetable-tittle h1 {
+    font-size: 36px;
+  }
+  .timetable-tittle h3 {
+    font-size: 25px;
+  }
+  .timeshet {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .day {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .day h6 {
+    font-size: 15px;
   }
 
   /* offsional-section-START  */
   .offsional-section {
     width: 100%;
+    margin: 100px auto;
   }
   .offsional-section-tittle h2 {
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 10px;
   }
   .offsional-section-tittle p {
@@ -833,26 +846,24 @@ select {
   }
   .box-1 {
     width: 100%;
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
   .box-2 {
     width: 100%;
-    grid-template-columns: 210px auto;
+    grid-template-columns: 220px auto;
   }
   #item-5 {
-    width: 100%;
+    width: auto;
   }
   .image {
     height: 170px;
-    padding: 10px;
   }
-
   #item-3 {
     display: none;
   }
   #item-4 p {
-    font-size: 11px;
-    margin: 120px 0;
+    display: none;
   }
   #item-6 {
     display: none;
